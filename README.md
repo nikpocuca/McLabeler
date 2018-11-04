@@ -8,7 +8,7 @@ Starting mongo:
 mongod --port 27017 --dbpath=./database
 
 Starting flask in debug mode:
-FLASK_APP=mclabeler.py FLASK_DEBUG=1 python -m flask run
+FLASK_APP=mclabeler.py FLASK_DEBUG=1 python -m flask run --host=0.0.0.0
 
 If you are using the application for the first time, you must first load all the images into MongoDB. Do this with by running:
 ./load_data
